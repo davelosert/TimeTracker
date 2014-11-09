@@ -1,0 +1,27 @@
+[
+	{
+		"name" : "Example Task",
+		"startedAt" : 1414921139,
+		"stoppedAt" : 1414924739,
+		"tags" : [
+			"TestProject",
+			"Booked"
+		]
+	},
+	{
+		"name" : "Example Task 2",
+		"startedAt" : 1414911139,
+		"stoppedAt" : 1414914739,
+		"tags" : [
+			"TestProject2",
+			"Booked",
+			"Timeline"
+		]
+	},
+	{
+		"name" : "Example Task 3",
+		"startedAt" : 1414901139,
+		"stoppedAt" : 1414904739,
+		"tags" : []
+	}
+]

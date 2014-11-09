@@ -1,0 +1,9 @@
+{
+	"name" : "Example Task",
+	"startedAt" : 1414921139,
+	"stoppedAt"   : 1414924739,
+	"tags" : [
+		"TestProject",
+		"Booked"
+	]
+}

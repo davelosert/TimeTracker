@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/dave/.nvm/v0.10.33/bin/node',
+1 verbose cli   '/home/dave/.nvm/v0.10.33/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gulp-inject' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json TimeTracker@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'gulp-inject', null ]
+7 verbose cache add name=undefined spec="gulp-inject" args=["gulp-inject",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'gulp-inject',
+8 verbose parsed url   path: 'gulp-inject',
+8 verbose parsed url   href: 'gulp-inject' }
+9 silly lockFile 39c14ab5-gulp-inject gulp-inject
+10 verbose lock gulp-inject /home/dave/.npm/39c14ab5-gulp-inject.lock
+11 silly lockFile 39c14ab5-gulp-inject gulp-inject
+12 silly lockFile 39c14ab5-gulp-inject gulp-inject
+13 verbose addNamed [ 'gulp-inject', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile c1c704cc-gulp-inject gulp-inject@
+16 verbose lock gulp-inject@ /home/dave/.npm/c1c704cc-gulp-inject.lock
+17 silly addNameRange { name: 'gulp-inject', range: '*', hasData: false }
+18 verbose request where is /gulp-inject
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id a10b9b80b9d27aea
+21 verbose url raw /gulp-inject
+22 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-inject' ]
+23 verbose url resolved https://registry.npmjs.org/gulp-inject
+24 verbose request where is https://registry.npmjs.org/gulp-inject
+25 info trying registry request attempt 1 at 00:53:18
+26 http GET https://registry.npmjs.org/gulp-inject
+27 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+28 info trying registry request attempt 2 at 00:53:48
+29 http GET https://registry.npmjs.org/gulp-inject
+30 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+31 info trying registry request attempt 3 at 00:55:08
+32 http GET https://registry.npmjs.org/gulp-inject
+33 silly lockFile c1c704cc-gulp-inject gulp-inject@
+34 silly lockFile c1c704cc-gulp-inject gulp-inject@
+35 error network getaddrinfo ENOTFOUND
+35 error network This is most likely not a problem with npm itself
+35 error network and is related to network connectivity.
+35 error network In most cases you are behind a proxy or have bad network settings.
+35 error network
+35 error network If you are behind a proxy, please make sure that the
+35 error network 'proxy' config is set properly.  See: 'npm help config'
+36 error System Linux 3.13.0-37-generic
+37 error command "/home/dave/.nvm/v0.10.33/bin/node" "/home/dave/.nvm/v0.10.33/bin/npm" "install" "--save-dev" "gulp-inject"
+38 error cwd /home/dave/Projects/TimeTracker
+39 error node -v v0.10.33
+40 error npm -v 1.4.28
+41 error syscall getaddrinfo
+42 error code ENOTFOUND
+43 error errno ENOTFOUND
+44 verbose exit [ 1, true ]
