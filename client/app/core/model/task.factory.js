@@ -10,10 +10,10 @@ angular.module('tt:core')
 		 * @class Task
 		 */
 		var Task = restmod.model('/task').mix({
-			name : {},
-			//tags : {hasMany : 'Tag'},
-			startedAt: {},
-			stoppedAt: {}
+			name      : {},
+			tags      : {hasMany : 'Tag'},
+			startedAt : {},
+			stoppedAt : {}
 			//user : {belongsTo : 'User'}
 		});
 		// #CRUD

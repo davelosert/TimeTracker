@@ -7,7 +7,7 @@ angular.module('tt:taskEntry')
 
 
 		return {
-			templateUrl: 'app/components/taskEntry/taskEntry.html',
+			templateUrl: 'app/components/taskEntry/taskEntry.tpl.html',
 			link : function (scope, attribute, element) {
 				$log = $log.getInstance('EntryCtrl');
 

@@ -44,5 +44,5 @@ gulp.task('index', function () {
 });
 
 gulp.task( 'server:start', function() {
-	server.listen( { path: './apps/app.js' }, ps.livereload.listen );
+	server.listen( { path: './apps/app.mdl.js' }, ps.livereload.listen );
 });

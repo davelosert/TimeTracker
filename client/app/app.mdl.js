@@ -19,7 +19,7 @@ angular.module('TimeTracker', ['ngResource', 'ui.router', 'ui.select', 'log.ex.u
 		$stateProvider
 			.state('timeTracker', {
 				url          : '/timetracker',
-				templateUrl  : 'app/pages/timeTracker/timeTracker.html',
+				templateUrl  : 'app/pages/timeTracker/timeTracker.tpl.html',
 				controller   : 'TimeTrackerCtrl',
 				controllerAs : 'timeTrackerCtrl'
 			});
