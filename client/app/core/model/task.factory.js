@@ -11,7 +11,7 @@ angular.module('tt:core')
 		 */
 		var Task = restmod.model('/task').mix({
 			name      : {},
-			tags      : {hasMany : 'Tag'},
+			tags      : {belongsToMany : 'Tag'},
 			startedAt : {},
 			stoppedAt : {}
 			//user : {belongsTo : 'User'}
