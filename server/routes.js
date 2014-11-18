@@ -30,7 +30,7 @@ module.exports = function (app) {
 		})
 		.delete();
 
-	app.route('/tags')
+	app.route('/tag')
 		//.all()
 		.get(function (req, res) {
 			res.status(200).json(MOCKS.TagsList);
