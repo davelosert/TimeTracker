@@ -5,25 +5,41 @@
 
 
 var MOCKS = {
-	TaskList : require('../test/_mocks/M_TaskList.json'),
-	SingleTask : require('../test/_mocks/M_SingleTask.json')
+	TaskList   : require('../test/_mocks/M_TaskList.json'),
+	SingleTask : require('../test/_mocks/M_SingleTask.json'),
+	TagsList   : require('../test/_mocks/M_TagsList.json')
 };
 
 module.exports = function (app) {
 	// todo just temporary to not have 500 all the time...
-	app.route('/').all(function(req, res){
+	app.route('/').all(function (req, res) {
 		res.status(200);
 	});
 	app.route('/task')
 		//.all()
-		.get(function(req, res){
+		.get(function (req, res) {
 			res.status(200).json(MOCKS.TaskList);
 		})
-		.post(function(req, res){
+		.post(function (req, res) {
 			console.log(req.body);
 			res.status(200);
 		})
-		.put(function(req, res){
+		.put(function (req, res) {
+			console.log(req.body);
+			res.status(200);
+		})
+		.delete();
+
+	app.route('/tags')
+		//.all()
+		.get(function (req, res) {
+			res.status(200).json(MOCKS.TagsList);
+		})
+		.post(function (req, res) {
+			console.log(req.body);
+			res.status(200);
+		})
+		.put(function (req, res) {
 			console.log(req.body);
 			res.status(200);
 		})
