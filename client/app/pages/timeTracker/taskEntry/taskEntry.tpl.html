@@ -1,15 +1,19 @@
-<div ng-controller="TaskEntryCtrl as taskEntryCtrl"></div>
-<h1>Timer</h1>
-        <form>
-            <input type="text" placeholder="Name des Tasks" ng-model="taskEntryCtrl.taskModel.name"/>
-            <input type="text" placeholder="Tags" ng-model="taskModel.tags" />
-        </form>
-<timer autostart="false">{{hhours}}:{{mminutes}}:{{sseconds}}</timer>
-<button type="button"
-        class="btn btn-primary"
-        ng-click="startTimer()"
-        ng-disabled="timerRunning">Start</button>
-<button type="button"
-        class="btn btn-warning"
-        ng-click="stopTimer()"
-        ng-disabled="!timerRunning">Stop</button>
+<div ng-controller="TaskEntryCtrl as TaskEntryCtrl">
+	<h1>Timer</h1>
+
+	<form>
+		<input type="text" placeholder="Name des Tasks" ng-model="TaskEntryCtrl.taskModel.name"/>
+		<input type="text" placeholder="Tags" ng-model="TaskEntryCtrl.taskModel.tags"/>
+	</form>
+	<timer autostart="false">{{hhours}}:{{mminutes}}:{{sseconds}}</timer>
+	<button type="button"
+			class="btn btn-primary"
+			ng-click="TaskEntryCtrl.startTimer()"
+			ng-disabled="TaskEntryCtrl.timerRunning">Start
+	</button>
+	<button type="button"
+			class="btn btn-warning"
+			ng-click="TaskEntryCtrl.stopTimer()"
+			ng-disabled="!TaskEntryCtrl.timerRunning">Stop
+	</button>
+</div>

@@ -7,7 +7,6 @@ angular.module('tt:timeTracker')
 		$log = $log.getInstance('TaskEntryCtrl');
 
 		var currentTask;
-
 		this.taskModel = {
 			name : '',
 			tags : []
