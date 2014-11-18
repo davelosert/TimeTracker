@@ -4,8 +4,5 @@
  */
 
 angular.module('tt:3rdParty', []);
-angular.module('tt:taskEntry', ['timer']);
-angular.module('tt:taskList', ['ui.grid', 'ui.grid.edit']);
 
-
-angular.module('tt:components', ['tt:3rdParty', 'tt:taskEntry', 'tt:taskList']);
+angular.module('tt:components', ['tt:3rdParty']);

@@ -3,7 +3,7 @@
  * Created by dave on 06.11.14.
  */
 
-angular.module('tt:taskList')
+angular.module('tt:timeTracker')
 	.controller('TaskListCtrl',
 	/**
 	 * @constructor

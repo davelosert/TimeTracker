@@ -2,32 +2,32 @@
 /**
  * Created by dave on 02.11.14.
  */
-angular.module('tt:taskEntry')
+angular.module('tt:timeTracker')
 	.controller('TaskEntryCtrl', function ($scope, $log, moment, Task) {
 		$log = $log.getInstance('TaskEntryCtrl');
 
 		var currentTask;
 
-		$scope.taskModel = {
+		this.taskModel = {
 			name : '',
 			tags : []
 		};
 
 
-		$scope.timerRunning = false;
+		this.timerRunning = false;
 
-		$scope.startTimer = function () {
+		this.startTimer = function () {
 			currentTask = Task.$build({
-				name      : $scope.taskModel.name,
-				tags      : $scope.taskModel.tags,
+				name      : this.taskModel.name,
+				tags      : this.taskModel.tags,
 				startedAt : moment().unix()
 			});
 			// Create new Tasks
 			$scope.$broadcast('timer-start');
-			$scope.timerRunning = true;
-		};
+			this.timerRunning = true;
+		}.bind(this);
 
-		$scope.stopTimer = function () {
+		this.stopTimer = function () {
 			$scope.$broadcast('timer-stop');
 			this.timerRunning = false;
 

@@ -10,7 +10,7 @@ var bowerDeps  = ['ngResource', 'ui.router', 'log.ex.uo']
 	, coreDeps = ['tt:core', 'tt:components']
 	, pageDeps = ['tt:timeTracker'];
 
-angular.module('TimeTracker', ['ngResource', 'ui.router', 'ui.select', 'log.ex.uo', 'tt:core', 'tt:components', 'tt:timeTracker'])
+angular.module('TimeTracker', ['ngResource', 'ui.router', 'ui.select', 'log.ex.uo', 'tt:components', 'tt:core', 'tt:pages'])
 	.config(function ($stateProvider, $urlRouterProvider, logExProvider, uiSelectConfig) {
 
 		// For any unmatched url, send to /route1
